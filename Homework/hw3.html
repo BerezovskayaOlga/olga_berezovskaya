@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str;
+        str = prompt('Type your string').toLowerCase();
+        let result = sumvow(str);
+        
+       function sumvow(str) {
+        let sum = "";
+        let vowel = ['а', 'о', 'и', 'ы', 'у', 'я'];
+        for (let i=0; i<str.length; i++) {
+            if (vowel.includes(str[i])) {
+                sum+= str[i]
+            }
+            else {
+                continue
+            }
+       }
+        return sum;
+        }
+        console.log(result)
+        console.log(result.length);
+    </script>
+</body>
+</html>

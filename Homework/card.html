@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="phoneName">Type phone name</br>
+    <input type="text" name="imgUrl">Add image url</br>
+    <textarea name="description" rows="3" columns="28">Type your description</textarea>
+    <button onclick="SubmitData()">Submit</button>
+
+    <div id="datacontainer"></div>
+
+    <script>
+
+        const data = [];
+        const addData = () => {
+            const phoneName = document.querySelector('[name=phoneName]').value;
+            const imgUrl = document.querySelector('[name="imgUrl"]').value;
+            const descr = document.querySelector('[name="description"]').value;
+
+            const alldata = {
+                phoneName, imgUrl, descr
+            }
+
+            data.push(alldata)
+            
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

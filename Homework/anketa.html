@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const year = 365;
+        const man_retirement = 60;
+        const woman_retirement = 55;
+        let name, surname, age, sex, retirement;
+
+
+
+        name = prompt('Введите ваше имя');
+
+        surname = prompt('Введите вашу фамилию');
+
+        age = Number(prompt('Сколько вам полных лет?'));
+
+        sex = confirm('Нажмите ОК если ваш пол мужской, если женский - нажмите ОТМЕНИТЬ');
+        if (sex == true) {
+            message = ' мужской';
+        } else {
+            message = ' женский';
+        }
+
+        retirement = sex === 'мужской'
+            ?
+            age > man_retirement ? 'Да' : 'Нет' :
+            age > woman_retirement ? 'Да' : 'Нет'
+
+        alert('Ваше ФИО' + " " + name + " " + surname +
+            '\nВаш возраст в годах' + " " + age +
+            '\nВаш возраст в днях' + " " + age * 365 +
+            '\nЧерез 5 лет вам будет' + " " + age + 5 + " лет" +
+            '\nВаш пол' + " " + message +
+            '\nВы на пенсии' + " " + retirement
+        );
+
+    </script>
+</body>
+
+</html>

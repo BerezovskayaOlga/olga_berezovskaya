@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    const str="This website is for losers LOL!";
+
+
+        function disemvowel(str) {
+            const vowels = ['a','e','i','o','u','A', 'E','I', 'O', 'U'];
+           
+            let aftertest = "";
+        
+            for (let i=0; i<str.length; i++){
+                if (vowels.includes(str[i])) {
+                    continue;
+                } else {
+                    aftertest += str[i]
+                } 
+            }
+        return aftertest;
+          // console.log(aftertest);
+            
+          }
+          disemvowel(str);
+
+
+
+          // 'H'.repeat
+          // 'HiHHi.toLowerCase()'
+          // 1. перевести в нижний регистр 2. создаем глобальную переменную result пустая строка, в нее будут закидываться результаты перебора 3. перебираем исходную строку str
+          // 4. на каждой итерации репитом делаем дублирование i+1 5. дописываем в result+ = '-'+'какая-то переменная'
+          //6. во втором цикле увеличивает регистр нулевого элемента 7. делаем конкотенацию
+          </script>
+</body>
+</html>
